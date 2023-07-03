@@ -11,15 +11,7 @@ aprendizado sobre Docker.
   - _Requisitos/bibliotecas disponíveis em requirements.txt_
 
 ### Instruções para uso
-  - #### Criar arquivo db.env com a seguintes informações de exemplo
-      - DEBUG=True_ou_False
-      - POSTGRES_DB=Nome_do_banco
-      - POSTGRES_USER=Usuario
-      - POSTGRES_PASSWORD=Senha
-      - POSTGRES_SERVICE=Host
-      - POSTGRES_PORT=Porta
-    
   - #### Roda o comando na raiz do projeto (.../wep_app)
-    - docker-compose up -d
+    - docker-compose up -dq
   
   Se tudo deu certo, é só acessar http://localhost:8000/
