@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+  web:
+    build:
+        context: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/web_app
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    env_file:
+      - ./db.env
+  db:
+    image: postgres:14
+    volumes:
+        - postgres_data:/var/lib/postgresql/data/
+    env_file:
+        - ./db.env
+
+volumes:
+  postgres_data: {}
