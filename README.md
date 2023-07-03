@@ -7,8 +7,8 @@ aprendizado sobre Docker.
 ### Infraestrutura
   - Python: 3.10.5 
   - Django: 4.2.2 
-  - PostgreSQL: 14
-_Requisitos/bibliotecas disponíveis em requirements.txt_
+  - PostgreSQL: 14 
+  - _Requisitos/bibliotecas disponíveis em requirements.txt_
 
 ### Instruções para uso
   - #### Criar arquivo db.env com a seguintes informações de exemplo
